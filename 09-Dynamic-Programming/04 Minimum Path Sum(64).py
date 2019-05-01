@@ -1,8 +1,3 @@
-# 343
-# 279
-# 91
-# 62
-# 63
 def minPathSum(grid):
     """
     :type grid: List[List[int]]
