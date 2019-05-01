@@ -16,10 +16,10 @@ def fib_dp(num):
         # f(n) = f(n-1) + f(n-2)
         lst.append(lst[i - 1] + lst[i - 2])
 
-    return lst[len(lst) - 1]
+    return lst[- 1]
 
 
 if __name__ == "__main__":
-    num1 = fib_recursion(10)
-    num2 = fib_dp(10)
+    num1 = fib_recursion(3)
+    num2 = fib_dp(3)
     print(num1, num2)
