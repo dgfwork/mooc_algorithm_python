@@ -34,3 +34,7 @@ class Tree(object):
                 return
             else:
                 queue.append(cur_node.lchild)
+
+
+if __name__ == "__main__":
+    tree = Tree()
