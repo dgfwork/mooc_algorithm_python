@@ -44,18 +44,50 @@ class Tree(object):
             queue = [self.root]
             while queue:
                 cur_node = queue.pop(0)
-                print(cur_node.elem)
+                print(cur_node.elem, end=" ")
                 if cur_node.lchild:
                     queue.append(cur_node.lchild)
                 if cur_node.rchild:
                     queue.append(cur_node.rchild)
 
+    def preorder(self, node):
+        if node == None:
+            return
+        else:
+            print(node.elem, end=" ")
+            self.preorder(node.lchild)
+            self.preorder(node.rchild)
+
+    def inorder(self, node):
+        if node == None:
+            return
+        else:
+            self.inorder(node.lchild)
+            print(node.elem, end=" ")
+            self.inorder(node.rchild)
+    def postorder(self, node):
+        if node == None:
+            return
+        else:
+            self.postorder(node.lchild)
+            self.postorder(node.rchild)
+            print(node.elem, end=" ")
+
+
+
 
 if __name__ == "__main__":
     tree = Tree()
-    tree.add(20)
-    tree.add(10)
-    tree.add(80)
-    tree.add(100)
-    tree.add(178)
+    tree.add(0)
+    tree.add(1)
+    tree.add(2)
+    tree.add(3)
+    tree.add(4)
+    tree.add(5)
+    tree.add(6)
+    tree.add(7)
+    tree.add(8)
+    tree.add(9)
     tree.breadth_travel()
+    print("")
+    tree.preorder(tree.root)
