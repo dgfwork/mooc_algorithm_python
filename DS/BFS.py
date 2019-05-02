@@ -13,7 +13,7 @@ def BFS(graph, start):
     memo.add(start)
     while queue:
         temp = queue.pop(0)  # 先进先出  队列
-        print(temp)
+        print(temp, end=" ")
         lst = graph.get(temp)  # 获取到邻接点
         for item in lst:
             if item not in memo:  # 不在小本本上面的话 加入小本本 再入队列
