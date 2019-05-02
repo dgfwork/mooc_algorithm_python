@@ -12,8 +12,8 @@ def selectsort(nums):
         min_index = i
         for j in range(i + 1, n):
             if nums[j] < nums[min_index]:
-                min_index = j
-                nums[i], nums[min_index] = nums[min_index], nums[i]
+                min_index = j  # 全部走一遍，找到最小值的索引，再去交换
+        nums[i], nums[min_index] = nums[min_index], nums[i]
     return nums
 
 
