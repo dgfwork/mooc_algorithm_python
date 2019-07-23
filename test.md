@@ -106,7 +106,7 @@ desired capability里面的四个参数：
 
 ​       执行这条指令 logcat | grep cm  同时打开App即可获取：
 
-​       ![img](file:///C:/Users/SCAVEN~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+​       ![img](https://github.com/dgfwork/mooc_algorithm_python/blob/master/img/clip_image002.jpg)
 
 desired capability设置完后点击保存
 
